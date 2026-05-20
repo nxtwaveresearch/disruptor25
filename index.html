@@ -36,8 +36,8 @@
     position: fixed;
     inset: 0;
     background-image:
-      repeating-linear-gradient(0deg, transparent, transparent 80px, rgba(201,168,76,0.015) 80px, rgba(201,168,76,0.015) 81px),
-      repeating-linear-gradient(90deg, transparent, transparent 80px, rgba(201,168,76,0.015) 80px, rgba(201,168,76,0.015) 81px);
+      repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(201,168,76,0.06) 40px, rgba(201,168,76,0.06) 41px),
+      repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(201,168,76,0.06) 40px, rgba(201,168,76,0.06) 41px);
     pointer-events: none;
     z-index: 0;
   }
@@ -51,6 +51,22 @@
       radial-gradient(ellipse 40% 40% at 10% 80%, rgba(201,168,76,0.04) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
+  }
+
+  /* ── WATERMARK ── */
+  .watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(280px, 40vw, 480px);
+    color: rgba(201,168,76,0.04);
+    pointer-events: none;
+    z-index: 1;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    user-select: none;
   }
 
   /* ── LAYOUT ── */
@@ -536,6 +552,8 @@
 </head>
 <body>
 
+<div class="watermark">25</div>
+
 <div class="page">
 
   <div class="topbar">
@@ -557,24 +575,6 @@
 
   <div class="subtitle">The private index tracking where the future economy is forming</div>
   <div class="hrule"></div>
-  <p class="tagline">
-    Tomorrow night, Matt is going live to reveal the stocks he may be adding in the next rebalance — AI, robotics, power infrastructure, defense tech, and space. This briefing is the gateway to permanent access.
-  </p>
-
-  <div class="stats">
-    <div class="stat">
-      <div class="stat-num">18.5%</div>
-      <div class="stat-label">Disruptor 25 Return</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">8.5%</div>
-      <div class="stat-label">S&P 500 Return</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">25</div>
-      <div class="stat-label">Hand-Selected Stocks</div>
-    </div>
-  </div>
 
   <!-- FORM CARD -->
   <div class="form-card" id="formCard">
@@ -597,6 +597,25 @@
       <div class="success-icon">✓</div>
       <div class="success-title">Your Spot Is Reserved</div>
       <div class="success-sub">We'll send the details to your inbox shortly.<br>See you tomorrow at 5pm ET.</div>
+    </div>
+  </div>
+
+  <p class="tagline">
+    Tomorrow night, Matt is going live to reveal the stocks he may be adding in the next rebalance — AI, robotics, power infrastructure, defense tech, and space. This briefing is the gateway to permanent access.
+  </p>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num">18.5%</div>
+      <div class="stat-label">Disruptor 25 Return</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">8.5%</div>
+      <div class="stat-label">S&P 500 Return</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">25</div>
+      <div class="stat-label">Hand-Selected Stocks</div>
     </div>
   </div>
 
