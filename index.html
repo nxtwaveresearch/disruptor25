@@ -586,10 +586,6 @@
     <div id="formInner">
       <div class="field-group">
         <div class="field">
-          <label>First Name</label>
-          <input type="text" id="firstName" placeholder="First name" autocomplete="given-name" />
-        </div>
-        <div class="field">
           <label>Email Address</label>
           <input type="email" id="email" placeholder="your@email.com" autocomplete="email" />
         </div>
@@ -633,12 +629,12 @@
   const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxk1BWLCZOR89kwnA4t0VpRNzatrUMEumjmGU6aUMg7pQNWnNl8RjBlpUwD2l2cyjmd/exec';
 
   async function handleSubmit() {
-    const firstName = document.getElementById('firstName').value.trim();
+    
     const email = document.getElementById('email').value.trim();
     const btn = document.getElementById('submitBtn');
 
-    if (!firstName || !email) {
-      alert('Please enter your name and email.');
+    if (!email) {
+      alert('Please enter your email address.');
       return;
     }
 
@@ -656,7 +652,7 @@
         mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          firstName,
+          
           email,
           event: 'Disruptor 25 Live',
           timestamp: new Date().toISOString()
