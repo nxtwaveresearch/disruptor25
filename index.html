@@ -56,7 +56,7 @@
     letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,240,232,0.9);
   }
 
-  .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: #e05555; animation: livepulse 1.5s ease-in-out infinite; }
+  .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: #5b9bd5; animation: livepulse 1.5s ease-in-out infinite; }
 
   @keyframes livepulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.7)} }
   @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.8)} }
@@ -87,26 +87,26 @@
   }
   .live-card::before {
     content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
-    background: linear-gradient(90deg, transparent, #e05555, transparent);
+    background: linear-gradient(90deg, transparent, #5b9bd5, transparent);
   }
   .live-indicator {
     display: inline-flex; align-items: center; gap: 8px;
     font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.22em;
-    text-transform: uppercase; color: #e05555; margin-bottom: 14px;
+    text-transform: uppercase; color: #5b9bd5; margin-bottom: 14px;
   }
-  .live-dot { width: 6px; height: 6px; border-radius: 50%; background: #e05555; animation: livepulse 1.5s ease-in-out infinite; }
+  .live-dot { width: 6px; height: 6px; border-radius: 50%; background: #5b9bd5; animation: livepulse 1.5s ease-in-out infinite; }
   .live-title { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 30px; color: var(--ink); margin-bottom: 8px; line-height: 1.2; }
   .live-sub { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-style: italic; color: rgba(14,12,9,0.55); margin-bottom: 28px; line-height: 1.6; }
   .live-btn {
     display: block; width: 100%; padding: 20px;
-    background: #e05555; color: #fff;
-    border: 1px solid #c94444;
+    background: #5b9bd5; color: #fff;
+    border: 1px solid #4a8ab5;
     font-family: 'DM Mono', monospace; font-size: 15px; font-weight: 500;
     letter-spacing: 0.22em; text-transform: uppercase;
     text-decoration: none; text-align: center;
     transition: background 0.2s;
   }
-  .live-btn:hover { background: #c94444; }
+  .live-btn:hover { background: #4a8ab5; }
   .live-note { margin-top: 14px; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; color: rgba(14,12,9,0.25); text-transform: uppercase; }
 
   .tagline { font-size: clamp(19px, 2.5vw, 22px); line-height: 1.85; color: rgba(245,240,232,0.92); max-width: 560px; font-weight: 400; text-align: center; margin: 0 auto; animation: fadeUp 0.6s 0.4s ease both; }
@@ -154,14 +154,14 @@
 
   <div class="topbar">
     <div class="brand">NXT Wave Research</div>
-    <div class="badge"><div class="badge-dot"></div>Live Now</div>
+    <div class="badge"><div class="badge-dot"></div>Replay Available</div>
   </div>
 
   <div class="rule"></div>
 
   <div class="meta">
     <span>📅 May 21, 2026</span>
-    <span>🔴 Streaming Now</span>
+    <span>▶ Replay Available</span>
   </div>
 
   <div class="eyebrow">Matt McCall — Exclusive Briefing</div>
@@ -170,14 +170,15 @@
   <div class="hrule"></div>
 
   <div class="live-card">
-    <div class="live-indicator"><div class="live-dot"></div>Live Now</div>
-    <div class="live-title">The Event Is Happening Right Now</div>
-    <div class="live-sub">Matt is live revealing the next stocks under consideration for the Disruptor 25 rebalance.</div>
-    <a href="https://www.youtube.com/live/77SxFw_vCIs" target="_blank" rel="noopener" class="live-btn">▶ Join the Live Event</a>
+    <div class="live-indicator"><div class="live-dot"></div>Replay Available</div>
+    <div class="live-title">Watch the Full Replay</div>
+    <div class="live-sub">Matt revealed the next stocks he is considering adding under consideration for the Disruptor 25 rebalance.</div>
+    <a href="https://www.youtube.com/live/77SxFw_vCIs" target="_blank" rel="noopener" class="live-btn">▶ Watch the Replay</a>
+    <div class="live-note">Free to watch · Available now on YouTube</div>
   </div>
 
   <p class="tagline">
-    Matt is going live to reveal the stocks he may be adding in the next rebalance — AI, robotics, power infrastructure, defense tech, and space. This briefing is the gateway to permanent access.
+    Matt went live to reveal the stocks he may be adding in the next rebalance — AI, robotics, power infrastructure, defense tech, and space. This briefing is the gateway to permanent access.
   </p>
 
   <div class="stats">
